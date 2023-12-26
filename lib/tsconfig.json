@@ -7,6 +7,7 @@
     "declarationMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
     "inlineSources": false,
     "isolatedModules": true,
     "moduleResolution": "node",
@@ -16,5 +17,10 @@
     "skipLibCheck": true,
     "strict": true
   },
+  "typedocOptions": {
+    "entryPoints": ["./index.ts", "./src/**/*"],
+    "out": "../docs"
+  },
+  "include": ["src/**/*", "*.ts", "test/**/*"],
   "exclude": ["node_modules"]
 }
